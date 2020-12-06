@@ -22,6 +22,15 @@ body{
   letter-spacing: 0.04rem;
 }
 
+.accordion-btn:hover{
+  background: #019ba0;
+  transition: 0.5s;
+}
+
+.btn-active{
+  background: #019ba0;
+}
+
 .accordion-article{
   padding: 30px;
 }
