@@ -52,3 +52,10 @@ body{
 .accordion-article p:last-child{
   margin-bottom: 0;
 }
+
+@media (min-width: 850px){
+  .accordion{
+    width: 650px;
+    margin: 100px auto;
+  }
+}
