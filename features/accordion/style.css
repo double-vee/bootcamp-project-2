@@ -7,3 +7,17 @@
 body{
   background: #0a1a30;
 }
+
+.accordion-btn{
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-bottom: 1px dotted #019ba0;
+  background: #06b4ac;
+  cursor: pointer;
+  color: #d0ddf0;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+}
