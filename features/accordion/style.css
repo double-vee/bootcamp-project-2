@@ -32,7 +32,12 @@ body{
 }
 
 .accordion-article{
+  display: none;
   padding: 30px;
+}
+
+.visible{
+  display: block;
 }
 
 .accordion-article p{
