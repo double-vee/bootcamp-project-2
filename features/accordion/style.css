@@ -9,10 +9,13 @@ body{
 }
 
 .accordion-btn{
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   padding: 20px;
   border: none;
   border-bottom: 1px dotted #019ba0;
+  outline: none;
   background: #06b4ac;
   cursor: pointer;
   color: #d0ddf0;
@@ -27,8 +30,21 @@ body{
   transition: 0.5s;
 }
 
+.accordion-btn:after{
+  content: "+";
+  color: #d0ddf0;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  float: right;
+}
+
 .btn-active{
   background: #019ba0;
+}
+
+.btn-active:after{
+  content: "−";
 }
 
 .accordion-article{
