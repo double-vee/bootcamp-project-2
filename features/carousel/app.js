@@ -16,3 +16,17 @@ function runCarousel() {
   imgIndex = imgIndex + 1;
   moveImg();
 }
+
+function moveImg() {
+  if(imgIndex > images.length - 1) {
+    imgIndex = 0;
+  } else if(imgIndex < 0) {
+    imgIndex = images.length - 1;
+  }
+  
+  if(images[imgIndex].width === 300) {
+    imgContainer.style.transform = `translateX(${-imgIndex * 300}px)`
+  } else {
+    imgContainer.style.transform = `translateX(${-imgIndex * 600}px)`
+  }
+}
