@@ -33,3 +33,59 @@
   width: 300px;
   object-fit: cover;
 }
+
+.carousel-indicators{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow-btn{
+  margin: 6px;
+  border: none;
+  background: none;
+  color: #d0d8e0;
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: color 300ms ease-in-out;
+}
+
+.arrow-btn:hover{
+  color: #5b738a;
+}
+
+.arrow-btn:focus{
+  outline: none;
+}
+
+.slide-indicator{
+  height: 4px;
+  width: 32px;
+  background-color: #d0d8e0;
+  transition: background-color 300ms ease-in-out;
+}
+
+.slide-active{
+  background-color: #5b738a;
+}
+
+@media (min-width: 700px) {
+  .carousel-container,
+  .carousel-img{
+    width: 600px;
+  }
+
+  .carousel-indicators{
+    gap: 14px;
+  }
+  
+  .arrow-btn{
+    margin: 10px;
+    font-size: 2.8rem;
+  }
+  
+  .slide-indicator{
+    height: 6px;
+    width: 38px;
+  }
+}
