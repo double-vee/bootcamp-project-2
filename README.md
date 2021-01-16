@@ -3,9 +3,11 @@
 
 ### Features:
 
-1) [Accordion](features/accordion/index.html)
+[Accordion](features/accordion/index.html)
+
+[Carousel](features/carousel/index.html)
 
 
 ### Games:
 
-1) [Memory](games/memory/index.html)
+[Memory](games/memory/index.html)
