@@ -29,4 +29,32 @@ function moveImg() {
   } else {
     imgContainer.style.transform = `translateX(${-imgIndex * 600}px)`
   }
+
+  if(imgIndex === 0) {
+    firstSlideIndicator.classList.add("slide-active");
+    secondSlideIndicator.classList.remove("slide-active");
+    thirdSlideIndicator.classList.remove("slide-active");
+    fourthSlideIndicator.classList.remove("slide-active");
+  }
+
+  if(imgIndex === 1) {
+    firstSlideIndicator.classList.remove("slide-active");
+    secondSlideIndicator.classList.add("slide-active");    
+    thirdSlideIndicator.classList.remove("slide-active");
+    fourthSlideIndicator.classList.remove("slide-active");
+  }
+
+  if(imgIndex === 2) {
+    firstSlideIndicator.classList.remove("slide-active");
+    secondSlideIndicator.classList.remove("slide-active");
+    thirdSlideIndicator.classList.add("slide-active");
+    fourthSlideIndicator.classList.remove("slide-active");
+  }
+
+  if(imgIndex === 3) {
+    firstSlideIndicator.classList.remove("slide-active");
+    secondSlideIndicator.classList.remove("slide-active");
+    thirdSlideIndicator.classList.remove("slide-active");
+    fourthSlideIndicator.classList.add("slide-active");
+  }
 }
