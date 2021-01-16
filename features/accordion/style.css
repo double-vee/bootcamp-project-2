@@ -50,6 +50,14 @@ body{
   padding: 30px;
 }
 
+.smooth-collapse{
+  max-height: 0;
+  transform: scaleY(0);
+  transition-property: max-height, transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+
 .accordion-article p{
   margin-bottom: 20px;
   color: #7a90b3;
