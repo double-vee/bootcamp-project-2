@@ -53,6 +53,7 @@ body{
 .smooth-collapse{
   max-height: 0;
   transform: scaleY(0);
+  overflow: hidden;
   transition-property: max-height, transform;
   transition-duration: 300ms;
   transition-timing-function: ease-out;
