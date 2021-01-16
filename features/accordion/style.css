@@ -5,7 +5,7 @@
 }
 
 body{
-  background: #0a1a30;
+  background-color: #0a1a30;
 }
 
 .accordion-btn{
@@ -16,18 +16,18 @@ body{
   border: none;
   border-bottom: 1px dotted #019ba0;
   outline: none;
-  background: #06b4ac;
+  background-color: #06b4ac;
   cursor: pointer;
   color: #d0ddf0;
   font-family: 'Quicksand', Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.04rem;
+  transition: background-color 300ms;
 }
 
 .accordion-btn:hover{
-  background: #019ba0;
-  transition: 0.5s;
+  background-color: #019ba0;
 }
 
 .accordion-btn:after{
@@ -36,11 +36,10 @@ body{
   font-family: 'Quicksand', Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
-  float: right;
 }
 
 .btn-active{
-  background: #019ba0;
+  background-color: #019ba0;
 }
 
 .btn-active:after{
@@ -69,7 +68,7 @@ body{
   margin-bottom: 0;
 }
 
-@media (min-width: 850px){
+@media (min-width: 750px){
   .accordion{
     width: 650px;
     margin: 100px auto;
