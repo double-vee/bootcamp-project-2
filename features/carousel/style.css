@@ -1,0 +1,35 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100vh;
+  background: #091013;
+  overflow: hidden;
+}
+
+.carousel-container{
+  display: flex;
+  width: 300px;
+  overflow: hidden;
+}
+
+.img-container{
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-img{
+  height: auto;
+  width: 300px;
+  object-fit: cover;
+}
