@@ -58,3 +58,19 @@ function moveImg() {
     fourthSlideIndicator.classList.add("slide-active");
   }
 }
+
+arrowPrevBtn.addEventListener("click", () => {
+  imgIndex = imgIndex - 1;
+  moveImg();
+
+  clearInterval(interval);
+  interval = setInterval(runCarousel, 3000);
+});
+
+arrowNextBtn.addEventListener("click", () => {
+  imgIndex = imgIndex + 1;
+  moveImg();
+
+  clearInterval(interval);
+  interval = setInterval(runCarousel, 3000);
+});
