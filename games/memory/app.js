@@ -49,6 +49,8 @@ const cardArray = [
   }
 ];
 
+cardArray.sort(() => 0.5 - Math.random());
+
 const gameContainer = document.querySelector(".game-container");
 const resultDisplay = document.getElementById("result");
 const header = document.getElementById("header-score");
