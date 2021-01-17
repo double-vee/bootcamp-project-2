@@ -48,3 +48,8 @@ const cardArray = [
     img: "./img/hollyhock.png"
   }
 ];
+
+const gameContainer = document.querySelector(".game-container");
+const resultDisplay = document.getElementById("result");
+const header = document.getElementById("header-score");
+const resumeGameBtn = document.getElementById("resume-game");
