@@ -54,10 +54,24 @@ const resultDisplay = document.getElementById("result");
 const header = document.getElementById("header-score");
 const resumeGameBtn = document.getElementById("resume-game");
 
+let cardsChosen = [];
+let cardsChosenID = [];
+let cardsWon = [];
+
 cardArray.forEach(function(item, index) {
   let card = document.createElement("img");
   card.setAttribute("src", "./img/board.png");
   card.setAttribute("data-id", index);
   card.classList.add("card");
   gameContainer.appendChild(card);
+  card.addEventListener("click", flipCard);
 })
+
+function flipCard() {
+  let cardID = this.getAttribute("data-id");
+  cardsChosen.push(cardArray[cardID].name);
+  console.log(cardsChosen);
+  cardsChosenID.push(cardID);
+  console.log(cardsChosenID);
+  this.setAttribute("src", cardArray[cardID].img);
+}
