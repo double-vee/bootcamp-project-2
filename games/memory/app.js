@@ -106,4 +106,10 @@ function checkForMatch() {
 
   cardsChosen = [];
   cardsChosenID = [];
+
+  resultDisplay.textContent = cardsWon.length;
+
+  if (cardsWon.length === cardArray.length / 2) {
+    header.textContent = "You won!";
+  }
 }
