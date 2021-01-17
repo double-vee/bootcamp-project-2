@@ -70,8 +70,40 @@ cardArray.forEach(function(item, index) {
 function flipCard() {
   let cardID = this.getAttribute("data-id");
   cardsChosen.push(cardArray[cardID].name);
-  console.log(cardsChosen);
+  console.log("cardsChosen: " + cardsChosen);
   cardsChosenID.push(cardID);
-  console.log(cardsChosenID);
+  console.log("cardsChosenID: " + cardsChosenID);
   this.setAttribute("src", cardArray[cardID].img);
+  if(cardsChosen.length === 2) {
+    setTimeout(checkForMatch, 500)
+  } 
+}
+
+function checkForMatch() {
+  const cards = document.querySelectorAll("img");
+  const optionOneID = cardsChosenID[0];
+  const optionTwoID = cardsChosenID[1];
+
+  if (optionOneID === optionTwoID) {
+    cards[optionOneID].setAttribute("src", "./img/board.png");
+    cards[optionTwoID].setAttribute("src", "./img/board.png");
+    alert("You've clicked the same card");
+  } else if (cardsChosen[0] === cardsChosen[1]) {
+    cards[optionOneID].setAttribute("src", "./img/background.png");
+    cards[optionTwoID].setAttribute("src", "./img/background.png");
+    cards[optionOneID].style.cursor = "default";
+    cards[optionTwoID].style.cursor = "default";
+    cards[optionOneID].removeEventListener("click", flipCard);
+    cards[optionTwoID].removeEventListener("click", flipCard);
+    cardsWon.push(cardsChosen);
+    console.log("cards won: " + cardsWon);
+    alert("Score!");
+  } else {
+    cards[optionOneID].setAttribute("src", "./img/board.png");
+    cards[optionTwoID].setAttribute("src", "./img/board.png");
+    alert("Try again");
+  }
+
+  cardsChosen = [];
+  cardsChosenID = [];
 }
