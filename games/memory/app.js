@@ -111,5 +111,11 @@ function checkForMatch() {
 
   if (cardsWon.length === cardArray.length / 2) {
     header.textContent = "You won!";
+    resumeGameBtn.classList.remove("hidden");
   }
+
+  resumeGameBtn.addEventListener("click", () => {
+    location.reload();
+    resumeGameBtn.classList.add("hidden");
+  });
 }
