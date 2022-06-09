@@ -1,13 +1,15 @@
-# jfdzr2-project-2
+This is my second solo project completed during the front-end bootcamp at InfoShare Academy.
 
+The task was to build 2 features and 1 game using HTML, CSS and JavaScript.
 
-### Features:
+### 1. [Accordion](https://double-vee.github.io/jfdzr2-project-2/features/accordion/index.html)
 
-[Accordion](features/accordion/index.html)
+<img src="./accordion.png" alt="Accordion">
 
-[Carousel](features/carousel/index.html)
+### 2. [Carousel](https://double-vee.github.io/jfdzr2-project-2/features/carousel/index.html)
 
+<img src="./carousel.png" alt="Carousel">
 
-### Games:
+### 3. [Memory](https://double-vee.github.io/jfdzr2-project-2/games/memory/index.html)
 
-[Memory](games/memory/index.html)
+<img src="./memory.png" alt="Memory game">
